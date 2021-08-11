@@ -1,7 +1,6 @@
+// import { LitElement, html, css } from "lit";
 import { LitElement, html, css } from "https://jspm.dev/lit@2.0.0-rc.2";
-import { customElement } from "https://jspm.dev/lit@2.0.0-rc.2/decorators.js";
 
-@customElement("twm-button")
 export class TwmButton extends LitElement {
   static styles = css`
     :host {
@@ -20,3 +19,5 @@ export class TwmButton extends LitElement {
     return html` <slot></slot> `;
   }
 }
+
+customElements.define("twm-button", TwmButton);
